@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        * { margin: 0; padding: 0; box-sizing: border-box }
+        .simple-share {
+            font-size: 40px;
+            list-style-type: none;
+            display: block;
+        }
+        .simple-share li {
+            display: inline;
+            margin-right: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.simple-share-tools.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.simple-share a').simpleShare();
+        });
+    </script>
+</head>
+<body>
+    <ul class="ss-icon simple-share">
+        <li><a data-service="facebook">facebook</a></li>
+        <li><a data-service="twitter">twitter</a></li>
+        <li><a data-service="linkedin">linkedin</a></li>
+        <li><a data-service="googleplus">googleplus</a></li>
+        <li><a data-service="pinterest">pinterest</a></li>
+    </ul>
+</body>
+</html>
