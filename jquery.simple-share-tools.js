@@ -1,22 +1,22 @@
 (function($) {
     $.fn.simpleShare = function(args) {        
         var svcData = {
-            facebook: {
+            'facebook': {
                         codes: ['&#x21;', '&#x22;', '&#x23;'],
                         base: 'http://www.facebook.com/share.php?', 
                         urlkey: 'u='
                         },
-            twitter: {
+            'twitter': {
                         codes: ['&#x24;', '&#x25;', '&#x26;'],
                         base: 'http://twitter.com/intent/tweet?', 
                         urlkey: 'url='
                         },
-            linkedin: {
+            'linkedin': {
                         codes: ['&#x27;'],
                         base: 'http://www.linkedin.com/shareArticle?', 
                         urlkey: 'url='
                         },
-            googleplus: {
+            'google-plus': {
                         codes: ['&#x2e;', '&#x2f;', '&#x30;'],
                         base: 'https://plus.google.com/share?', 
                         urlkey: 'url='
@@ -42,10 +42,13 @@
             service = $(this).data('service');
             s = svcData[service];
             if (s !== undefined) {
-                href = s.base + s.url + url;
+                href = s.base + s.urlkey + url;
                 if (settings.iconfill) {
-                    $(this).css('font-family','simple-social-icons');
-                    $(this).html(s.codes[0]);
+                    //$(this).css('font-family','simple-social-icons');
+                    $(this).addClass('icon-'+service);
+                }
+                if (settings.color) {
+                    $(this).addClass('sst-color');
                 }
                 $(this).attr('href', href);
                 $(this).bind('click', {'url':href, 'title':'Share on '+service}, popup);

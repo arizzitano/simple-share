@@ -1,3 +1,4 @@
+/* ICOMOON CODE */
 @font-face {
 	font-family: 'simple-social-icons';
 	src: url('fonts/simple-social-icons.eot?#') format('eot'),
@@ -209,4 +210,18 @@
 }
 .icon-mail-2:before {
 	content: "\5f";
+}
+
+/* Color classes */
+.icon-facebook.sst-color:before {
+    color: #3B5998;
+}
+.icon-twitter.sst-color:before {
+    color: #00aced;
+}
+.icon-linkedin.sst-color:before {
+    color: #0181b2;
+}
+.icon-google-plus.sst-color:before {
+    color: #D6492C;
 }
