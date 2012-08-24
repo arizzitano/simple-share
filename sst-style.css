@@ -1,0 +1,212 @@
+@font-face {
+	font-family: 'simple-social-icons';
+	src: url('fonts/simple-social-icons.eot?#') format('eot'),
+		url('fonts/simple-social-icons.svg#simple-social-icons') format('svg'),
+		url('fonts/simple-social-icons.woff') format('woff'),
+		url('fonts/simple-social-icons.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'simple-social-icons';
+	content: attr(data-icon);
+	speak: none;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'simple-social-icons';
+	font-style: normal;
+	speak: none;
+}
+.icon-facebook:before {
+	content: "\21";
+}
+.icon-facebook-2:before {
+	content: "\22";
+}
+.icon-facebook-3:before {
+	content: "\23";
+}
+.icon-twitter:before {
+	content: "\24";
+}
+.icon-twitter-2:before {
+	content: "\25";
+}
+.icon-twitter-3:before {
+	content: "\26";
+}
+.icon-linkedin:before {
+	content: "\27";
+}
+.icon-youtube:before {
+	content: "\28";
+}
+.icon-youtube-2:before {
+	content: "\29";
+}
+.icon-stumbleupon:before {
+	content: "\2a";
+}
+.icon-stumbleupon-2:before {
+	content: "\2b";
+}
+.icon-pinterest:before {
+	content: "\2c";
+}
+.icon-pinterest-2:before {
+	content: "\2d";
+}
+.icon-google-plus:before {
+	content: "\2e";
+}
+.icon-google-plus-2:before {
+	content: "\2f";
+}
+.icon-gplus:before {
+	content: "\30";
+}
+.icon-github:before {
+	content: "\31";
+}
+.icon-github-2:before {
+	content: "\32";
+}
+.icon-github-3:before {
+	content: "\33";
+}
+.icon-github-4:before {
+	content: "\34";
+}
+.icon-tumblr:before {
+	content: "\35";
+}
+.icon-tumblr-2:before {
+	content: "\36";
+}
+.icon-yahoo:before {
+	content: "\37";
+}
+.icon-yahoo-2:before {
+	content: "\38";
+}
+.icon-amazon:before {
+	content: "\39";
+}
+.icon-amazon-2:before {
+	content: "\3a";
+}
+.icon-blogger:before {
+	content: "\3b";
+}
+.icon-blogger-2:before {
+	content: "\3c";
+}
+.icon-wordpress:before {
+	content: "\3d";
+}
+.icon-wordpress-2:before {
+	content: "\3e";
+}
+.icon-dribbble:before {
+	content: "\3f";
+}
+.icon-dribbble-2:before {
+	content: "\40";
+}
+.icon-dribbble-3:before {
+	content: "\41";
+}
+.icon-picassa:before {
+	content: "\42";
+}
+.icon-picassa-2:before {
+	content: "\43";
+}
+.icon-facebook-4:before {
+	content: "\44";
+}
+.icon-feed:before {
+	content: "\45";
+}
+.icon-feed-2:before {
+	content: "\46";
+}
+.icon-feed-3:before {
+	content: "\47";
+}
+.icon-vimeo:before {
+	content: "\48";
+}
+.icon-vimeo-2:before {
+	content: "\49";
+}
+.icon-flickr:before {
+	content: "\4a";
+}
+.icon-flickr-2:before {
+	content: "\4b";
+}
+.icon-flickr-3:before {
+	content: "\4c";
+}
+.icon-github-5:before {
+	content: "\4d";
+}
+.icon-github-6:before {
+	content: "\4e";
+}
+.icon-delicious:before {
+	content: "\4f";
+}
+.icon-lastfm:before {
+	content: "\50";
+}
+.icon-lastfm-2:before {
+	content: "\51";
+}
+.icon-skype:before {
+	content: "\52";
+}
+.icon-reddit:before {
+	content: "\53";
+}
+.icon-forrst:before {
+	content: "\54";
+}
+.icon-deviantart:before {
+	content: "\55";
+}
+.icon-forrst-2:before {
+	content: "\56";
+}
+.icon-deviantart-2:before {
+	content: "\57";
+}
+.icon-git:before {
+	content: "\58";
+}
+.icon-github-7:before {
+	content: "\59";
+}
+.icon-soundcloud:before {
+	content: "\5a";
+}
+.icon-soundcloud-2:before {
+	content: "\5b";
+}
+.icon-google-plus-3:before {
+	content: "\5d";
+}
+.icon-share:before {
+	content: "\5e";
+}
+.icon-mail:before {
+	content: "\5c";
+}
+.icon-mail-2:before {
+	content: "\5f";
+}
