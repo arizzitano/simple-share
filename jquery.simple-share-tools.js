@@ -33,9 +33,9 @@
                         }
         },
         settings = $.extend({
-            'iconfill': true,
-            'color':    false,
-            'shape':    0
+            'icons': true, 		// use icons vs. don't use icons
+            'color': true, 		// style icons with services' official colors
+            'shape': 'square'	// "circle", "square", or "none"
         }, args),
         url = escape(window.location.href),
         $sslinks = $(this),
@@ -53,6 +53,8 @@
             iconNum = '-3';
         } else if (settings.shape == 'square') {
             iconNum = '-2';
+        } else {
+        	iconNum = '';
         }
         
         $sslinks.each(function() {
@@ -60,7 +62,7 @@
             s = svcData[service];
             if (s !== undefined) {
                 href = s.base + s.urlkey + url;
-                if (settings.iconfill) {
+                if (settings.icons) {
                     $(this).addClass('icon-'+service+iconNum);
                     if (settings.color) {
                         $(this).addClass('sst-color');
