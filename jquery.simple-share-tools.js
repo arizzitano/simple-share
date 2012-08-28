@@ -2,38 +2,31 @@
     $.fn.simpleShare = function(args) {        
         var svcData = {
             'facebook': {
-                        codes: ['&#x21;', '&#x22;', '&#x23;'],
                         base: 'http://www.facebook.com/share.php?', 
                         urlkey: 'u='
                         },
             'twitter': {
-                        codes: ['&#x24;', '&#x25;', '&#x26;'],
                         base: 'http://twitter.com/intent/tweet?', 
                         urlkey: 'url='
                         },
             'linkedin': {
-                        codes: ['&#x27;'],
                         base: 'http://www.linkedin.com/shareArticle?', 
                         urlkey: 'url='
                         },
             'google-plus': {
-                        codes: ['&#x2e;', '&#x2f;', '&#x30;'],
                         base: 'https://plus.google.com/share?', 
                         urlkey: 'url='
                         },
             'reddit':   {
-                        codes: [],
                         base: 'http://www.reddit.com/submit?',
                         urlkey: 'url='
                         },
             'tumblr':   {
-                        codes: [],
                         base: 'http://www.tumblr.com/share?v=3&',
                         urlkey: 'u=',
                         titlekey: 't='
                         },
             'stumbleupon': {
-                        codes: [],
                         base: 'http://www.stumbleupon.com/submit?',
                         urlkey: 'url=',
                         titlekey: 'title='
