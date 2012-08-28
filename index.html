@@ -21,17 +21,19 @@
     <script type="text/javascript" src="jquery.simple-share-tools.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.simple-share a').simpleShare();
+            $('.simple-share a').simpleShare({'color': true, 'shape': 'square'});
         });
     </script>
 </head>
 <body>
-    <ul class="ss-icon simple-share">
+    <ul class="simple-share">
         <li><a data-service="facebook">facebook</a></li>
         <li><a data-service="twitter">twitter</a></li>
-        <li><a data-service="linkedin">linkedin</a></li>
         <li><a data-service="google-plus">google-plus</a></li>
-        <li><a data-service="pinterest">pinterest</a></li>
+        <li><a data-service="linkedin">linkedin</a></li>
+        <li><a data-service="stumbleupon">stumbleupon</a></li>
+        <li><a data-service="reddit">reddit</a></li>
+        <li><a data-service="tumblr">tumblr</a></li>
     </ul>
 </body>
 </html>

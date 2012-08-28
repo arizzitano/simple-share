@@ -20,12 +20,29 @@
                         codes: ['&#x2e;', '&#x2f;', '&#x30;'],
                         base: 'https://plus.google.com/share?', 
                         urlkey: 'url='
+                        },
+            'reddit':   {
+                        codes: [],
+                        base: 'http://www.reddit.com/submit?',
+                        urlkey: 'url='
+                        },
+            'tumblr':   {
+                        codes: [],
+                        base: 'http://www.tumblr.com/share?v=3&',
+                        urlkey: 'u=',
+                        titlekey: 't='
+                        },
+            'stumbleupon': {
+                        codes: [],
+                        base: 'http://www.stumbleupon.com/submit?',
+                        urlkey: 'url=',
+                        titlekey: 'title='
                         }
         },
         settings = $.extend({
             'iconfill': true,
             'color':    false,
-            'shape':    'classic'
+            'shape':    0
         }, args),
         url = escape(window.location.href),
         $sslinks = $(this),
@@ -36,7 +53,14 @@
             }
             return false;
         },
+        iconNum = '',
         service, s, href;
+        
+        if (settings.shape == 'circle') {
+            iconNum = '-3';
+        } else if (settings.shape == 'square') {
+            iconNum = '-2';
+        }
         
         $sslinks.each(function() {
             service = $(this).data('service');
@@ -44,11 +68,10 @@
             if (s !== undefined) {
                 href = s.base + s.urlkey + url;
                 if (settings.iconfill) {
-                    //$(this).css('font-family','simple-social-icons');
-                    $(this).addClass('icon-'+service);
-                }
-                if (settings.color) {
-                    $(this).addClass('sst-color');
+                    $(this).addClass('icon-'+service+iconNum);
+                    if (settings.color) {
+                        $(this).addClass('sst-color');
+                    }
                 }
                 $(this).attr('href', href);
                 $(this).bind('click', {'url':href, 'title':'Share on '+service}, popup);

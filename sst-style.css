@@ -23,205 +23,112 @@
 	speak: none;
 }
 .icon-facebook:before {
-	content: "\21";
-}
-.icon-facebook-2:before {
 	content: "\22";
 }
-.icon-facebook-3:before {
+.icon-facebook-2:before {
 	content: "\23";
 }
-.icon-twitter:before {
+.icon-facebook-3:before {
 	content: "\24";
 }
-.icon-twitter-2:before {
+.icon-twitter:before {
 	content: "\25";
 }
-.icon-twitter-3:before {
+.icon-twitter-2:before {
 	content: "\26";
 }
-.icon-linkedin:before {
+.icon-twitter-3:before {
 	content: "\27";
 }
-.icon-youtube:before {
+.icon-linkedin:before {
 	content: "\28";
 }
-.icon-youtube-2:before {
+.icon-linkedin-2:before {
 	content: "\29";
 }
-.icon-stumbleupon:before {
+.icon-linkedin-3:before {
 	content: "\2a";
 }
-.icon-stumbleupon-2:before {
+.icon-google-plus:before {
 	content: "\2b";
 }
-.icon-pinterest:before {
+.icon-google-plus-2:before {
 	content: "\2c";
 }
-.icon-pinterest-2:before {
+.icon-google-plus-3:before {
 	content: "\2d";
 }
-.icon-google-plus:before {
+.icon-pinterest:before {
 	content: "\2e";
 }
-.icon-google-plus-2:before {
+.icon-pinterest-3:before {
 	content: "\2f";
 }
-.icon-gplus:before {
+.icon-pinterest-2:before {
 	content: "\30";
 }
-.icon-github:before {
+.icon-tumblr:before {
 	content: "\31";
 }
-.icon-github-2:before {
+.icon-tumblr-2:before {
 	content: "\32";
 }
-.icon-github-3:before {
+.icon-tumblr-3:before {
 	content: "\33";
 }
-.icon-github-4:before {
+.icon-stumbleupon:before {
 	content: "\34";
 }
-.icon-tumblr:before {
+.icon-stumbleupon-2:before {
 	content: "\35";
 }
-.icon-tumblr-2:before {
+.icon-stumbleupon-3:before {
 	content: "\36";
 }
-.icon-yahoo:before {
+.icon-reddit:before {
 	content: "\37";
 }
-.icon-yahoo-2:before {
-	content: "\38";
-}
-.icon-amazon:before {
-	content: "\39";
-}
-.icon-amazon-2:before {
-	content: "\3a";
-}
-.icon-blogger:before {
-	content: "\3b";
-}
-.icon-blogger-2:before {
-	content: "\3c";
-}
-.icon-wordpress:before {
-	content: "\3d";
-}
-.icon-wordpress-2:before {
-	content: "\3e";
-}
-.icon-dribbble:before {
-	content: "\3f";
-}
-.icon-dribbble-2:before {
-	content: "\40";
-}
-.icon-dribbble-3:before {
-	content: "\41";
-}
-.icon-picassa:before {
-	content: "\42";
-}
-.icon-picassa-2:before {
-	content: "\43";
-}
-.icon-facebook-4:before {
-	content: "\44";
-}
-.icon-feed:before {
-	content: "\45";
-}
-.icon-feed-2:before {
-	content: "\46";
-}
-.icon-feed-3:before {
-	content: "\47";
-}
-.icon-vimeo:before {
-	content: "\48";
-}
-.icon-vimeo-2:before {
-	content: "\49";
-}
-.icon-flickr:before {
-	content: "\4a";
-}
-.icon-flickr-2:before {
-	content: "\4b";
-}
-.icon-flickr-3:before {
-	content: "\4c";
-}
-.icon-github-5:before {
-	content: "\4d";
-}
-.icon-github-6:before {
-	content: "\4e";
-}
-.icon-delicious:before {
+.icon-reddit-2:before {
 	content: "\4f";
 }
-.icon-lastfm:before {
-	content: "\50";
-}
-.icon-lastfm-2:before {
-	content: "\51";
-}
-.icon-skype:before {
-	content: "\52";
-}
-.icon-reddit:before {
+.icon-reddit-3:before {
 	content: "\53";
-}
-.icon-forrst:before {
-	content: "\54";
-}
-.icon-deviantart:before {
-	content: "\55";
-}
-.icon-forrst-2:before {
-	content: "\56";
-}
-.icon-deviantart-2:before {
-	content: "\57";
-}
-.icon-git:before {
-	content: "\58";
-}
-.icon-github-7:before {
-	content: "\59";
-}
-.icon-soundcloud:before {
-	content: "\5a";
-}
-.icon-soundcloud-2:before {
-	content: "\5b";
-}
-.icon-google-plus-3:before {
-	content: "\5d";
 }
 .icon-share:before {
 	content: "\5e";
 }
-.icon-mail:before {
+.icon-delicious:before {
 	content: "\5c";
 }
-.icon-mail-2:before {
+.icon-email-2:before {
 	content: "\5f";
+}
+.icon-email:before {
+	content: "\21";
 }
 
 /* Color classes */
-.icon-facebook.sst-color:before {
+.icon-facebook.sst-color:before, .icon-facebook.sst-color:visited:before, .icon-facebook-2.sst-color:before, .icon-facebook-2.sst-color:visited:before, .icon-facebook-3.sst-color:before, .icon-facebook-3.sst-color:visited:before {
     color: #3B5998;
 }
-.icon-twitter.sst-color:before {
+.icon-twitter.sst-color:before, .icon-twitter.sst-color:visited:before, .icon-twitter-2.sst-color:before, .icon-twitter-2.sst-color:visited:before, .icon-twitter-3.sst-color:before, .icon-twitter-3.sst-color:visited:before {
     color: #00aced;
 }
-.icon-linkedin.sst-color:before {
+.icon-linkedin.sst-color:before, .icon-linkedin.sst-color:visited:before, .icon-linkedin-2.sst-color:before, .icon-linkedin-2.sst-color:visited:before, .icon-linkedin-3.sst-color:before, .icon-linkedin-3.sst-color:visited:before {
     color: #0181b2;
 }
-.icon-google-plus.sst-color:before {
+.icon-google-plus.sst-color:before, .icon-google-plus.sst-color:visited:before, .icon-google-plus-2.sst-color:before, .icon-google-plus-2.sst-color:visited:before, .icon-google-plus-3.sst-color:before, .icon-google-plus-3.sst-color:visited:before {
     color: #D6492C;
+}
+.icon-tumblr.sst-color:before, .icon-tumblr.sst-color:visited:before, .icon-tumblr-2.sst-color:before, .icon-tumblr-2.sst-color:visited:before, .icon-tumblr-3.sst-color:before, .icon-tumblr-3.sst-color:visited:before {
+    color: #3C5A76;
+}
+.icon-pinterest.sst-color:before, .icon-pinterest.sst-color:visited:before, .icon-pinterest-2.sst-color:before, .icon-pinterest-2.sst-color:visited:before, .icon-pinterest-3.sst-color:before, .icon-pinterest-3.sst-color:visited:before {
+    color: #cb2027;
+}
+.icon-stumbleupon.sst-color:before, .icon-stumbleupon.sst-color:visited:before, .icon-stumbleupon-2.sst-color:before, .icon-stumbleupon-2.sst-color:visited:before, .icon-stumbleupon-3.sst-color:before, .icon-stumbleupon-3.sst-color:visited:before {
+    color: #EB4924;
+}
+.icon-reddit.sst-color:before, .icon-reddit.sst-color:visited:before, .icon-reddit-2.sst-color:before, .icon-reddit-2.sst-color:visited:before, .icon-reddit-3.sst-color:before, .icon-reddit-3.sst-color:visited:before {
+    color: #CEE3F8;
 }
