@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Helvetica, Arial, sans-serif; }
+        .basic, .basic-2, .basic-3, .manual {
+            font-size: 20px;
+            display: inline-block;
+            width: 250px;
+        }
+        a {
+            display: block;
+        }
+        .simple-share a:before {
+        	margin-right: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../sst-style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery.simple-share-tools.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.basic a').simpleShare();
+            $('.basic-2 a').simpleShare({'shape': 'circle'});
+            $('.basic-3 a').simpleShare({'shape': 'none', 'color': false});
+            $('.manual').simpleShare();
+        });
+    </script>
+</head>
+<body>
+	<h1>jQuery Simple Share</h1>
+	<section class="ss-block">
+		<h2>Basic Usage</h2>
+		<div class="basic">
+			<a data-service="facebook">facebook</a>
+			<a data-service="twitter">twitter</a>
+			<a data-service="google-plus">google-plus</a>
+			<a data-service="linkedin">linkedin</a>
+			<a data-service="stumbleupon">stumbleupon</a>
+			<a data-service="reddit">reddit</a>
+			<a data-service="tumblr">tumblr</a>
+		</div>
+    </section>
+    <section class="ss-block">
+		<h2>Shape and Color Options</h2>
+		<div class="basic-2">
+			<a data-service="facebook">facebook</a>
+			<a data-service="twitter">twitter</a>
+			<a data-service="google-plus">google-plus</a>
+			<a data-service="linkedin">linkedin</a>
+			<a data-service="stumbleupon">stumbleupon</a>
+			<a data-service="reddit">reddit</a>
+			<a data-service="tumblr">tumblr</a>
+		</div>
+		<div class="basic-3">
+			<a data-service="facebook">facebook</a>
+			<a data-service="twitter">twitter</a>
+			<a data-service="google-plus">google-plus</a>
+			<a data-service="linkedin">linkedin</a>
+			<a data-service="stumbleupon">stumbleupon</a>
+			<a data-service="reddit">reddit</a>
+			<a data-service="tumblr">tumblr</a>
+		</div>
+	</section>
+    <section class="ss-block">
+    	<h2>Manually setting the share page</h2>
+    	<div class="manual" data-page="http://google.com">
+			<a data-service="facebook">facebook</a>
+			<a data-service="twitter">twitter</a>
+			<a data-service="google-plus">google-plus</a>
+			<a data-service="linkedin">linkedin</a>
+			<a data-service="stumbleupon">stumbleupon</a>
+			<a data-service="reddit">reddit</a>
+			<a data-service="tumblr">tumblr</a>
+    	</div>
+    </section>
+</body>
+</html>

@@ -47,6 +47,8 @@ $(document).ready(function() {
 Options
 -------
 
+simple-share takes a hash of options, if desired.
+
 <table>
 	<tr>
 		<td>Option</td>
@@ -63,7 +65,7 @@ Options
 	<tr>
 		<td><code>shape</code></td>
 		<td>string</td>
-		<td><code>square</code></td>
+		<td><code>'square'</code></td>
 		<td>Determines which shape icons are used. Options are <code>'square'</code>, <code>'circle'</code>, or <code>'none'</code> (just the icon with no containing shape)</td>
 	</tr>
 	<tr>

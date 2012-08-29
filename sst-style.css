@@ -129,16 +129,17 @@
 .icon-stumbleupon.sst-color:before, .icon-stumbleupon.sst-color:visited:before, .icon-stumbleupon-2.sst-color:before, .icon-stumbleupon-2.sst-color:visited:before, .icon-stumbleupon-3.sst-color:before, .icon-stumbleupon-3.sst-color:visited:before {
     color: #EB4924;
 }
-.icon-reddit.sst-color:before, .icon-reddit.sst-color:visited:before, .icon-reddit-2.sst-color:before, .icon-reddit-2.sst-color:visited:before, .icon-reddit-3.sst-color:before, .icon-reddit-3.sst-color:visited:before {
-    color: #CEE3F8;
+.icon-reddit.sst-color:before, .icon-reddit.sst-color:visited:before {
+    color: #000;
 }
 /* reddit icon requires a bit of hackery */
 .icon-reddit-2.sst-color:before, .icon-reddit-2.sst-color:visited:before, .icon-reddit-3.sst-color:before, .icon-reddit-3.sst-color:visited:before {
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 79%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,1)), color-stop(79%,rgba(0,0,0,1)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 79%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 79%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 79%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 79%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color: #CEE3F8;
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 64%, rgba(0,0,0,0) 65%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,1)), color-stop(64%,rgba(0,0,0,1)), color-stop(65%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 64%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 64%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 64%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 64%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
