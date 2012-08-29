@@ -35,10 +35,11 @@
         settings = $.extend({
             'icons': true, 		// use icons vs. don't use icons
             'color': true, 		// style icons with services' official colors
-            'shape': 'square'	// "circle", "square", or "none"
+            'shape': 'square',	// "circle", "square", or "none"
+            'url': window.location.href // the url to use for sharing
         }, args),
-        url = escape(window.location.href),
         $sslinks = $(this),
+        parenturl = $(this).parent().data('url'),
         popup = function(e) {
             var nw = window.open(e.data.url, e.data.title,'height=400,width=600');
             if (window.focus) {
@@ -49,6 +50,7 @@
         iconNum = '',
         service, s, href;
         
+        // interpret shapes for the appropriate icon classes
         if (settings.shape == 'circle') {
             iconNum = '-3';
         } else if (settings.shape == 'square') {
@@ -57,11 +59,17 @@
         	iconNum = '';
         }
         
+        // master url on the container trumps page url
+        if (parenturl) {
+        	settings.url = parenturl;
+        }
+                
         $sslinks.each(function() {
             service = $(this).data('service');
             s = svcData[service];
             if (s !== undefined) {
-                href = s.base + s.urlkey + url;
+            	// specific urls on each link trump other urls
+                href = s.base + s.urlkey + escape($(this).data('url') || settings.url);
                 if (settings.icons) {
                     $(this).addClass('icon-'+service+iconNum);
                     if (settings.color) {

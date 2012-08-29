@@ -26,7 +26,7 @@
             $('.basic a').simpleShare();
             $('.basic-2 a').simpleShare({'shape': 'circle'});
             $('.basic-3 a').simpleShare({'shape': 'none', 'color': false});
-            $('.manual').simpleShare();
+            $('.manual a').simpleShare();
         });
     </script>
 </head>
@@ -65,11 +65,24 @@
 			<a data-service="tumblr">tumblr</a>
 		</div>
 	</section>
+	<h1>Manually setting the share page</h1>
     <section class="ss-block">
-    	<h2>Manually setting the share page</h2>
-    	<div class="manual" data-page="http://google.com">
+    	<h2>Same URL for every service</h2>
+    	<div class="manual" data-url="http://google.com">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
+			<a data-service="google-plus">google-plus</a>
+			<a data-service="linkedin">linkedin</a>
+			<a data-service="stumbleupon">stumbleupon</a>
+			<a data-service="reddit">reddit</a>
+			<a data-service="tumblr">tumblr</a>
+    	</div>
+    </section>
+    <section class="ss-block">
+    	<h2>Different URLs for different services</h2>
+    	<div class="manual" data-url="http://google.com">
+			<a data-service="facebook" data-url="http://yahoo.com">facebook</a>
+			<a data-service="twitter" data-url="http://bing.com">twitter</a>
 			<a data-service="google-plus">google-plus</a>
 			<a data-service="linkedin">linkedin</a>
 			<a data-service="stumbleupon">stumbleupon</a>
