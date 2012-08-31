@@ -2,21 +2,15 @@
 <html>
 <head>
     <style type="text/css">
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Helvetica, Arial, sans-serif; }
-        .basic, .basic-2, .basic-3, .manual {
-            font-size: 20px;
-            display: inline-block;
-            width: 250px;
-        }
-        a {
-            display: block;
-        }
-        .simple-share a:before {
-        	margin-right: 10px;
-        }
-        a {
-            text-decoration: none;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {font-family: Helvetica, Arial, sans-serif; }
+        .basic, .basic-2, .basic-3, .manual { font-size: 20px; display: inline-block; width: 250px; }
+        .ss-block { margin-bottom: 80px; border: 1px solid #eeedee; padding: 20px; }
+        .code { background: #eeedee; border: 1px solid #444; margin: 10px 0; padding: 10px; }
+        h1, h2, h3, h4, h5, h6 { margin: 0.5em 0; }
+        a { display: block; }
+        .simple-share a:before { margin-right: 10px; }
+        a { text-decoration: none; }
     </style>
     <link rel="stylesheet" href="../sst-style.css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -34,6 +28,9 @@
 	<h1>jQuery Simple Share</h1>
 	<section class="ss-block">
 		<h2>Basic Usage</h2>
+		<p>Easy. Shares the current page, and you don't have to pass any options.</p>
+		<h3>Call</h3>
+		<p class="code"><code>$('.basic a').simpleShare();</code></p>
 		<div class="basic">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
@@ -46,6 +43,9 @@
     </section>
     <section class="ss-block">
 		<h2>Shape and Color Options</h2>
+		<p>To change the shape or color of your icons, use the <code>shape</code> and <code>color</code> options.</p>
+		<p class="code"><code>$('.basic-2 a').simpleShare({'shape':'circle'});<br/>
+		$('.basic-3 a').simpleShare({'shape':'none', 'color':false});</code></p>
 		<div class="basic-2">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
@@ -65,9 +65,11 @@
 			<a data-service="tumblr">tumblr</a>
 		</div>
 	</section>
-	<h1>Manually setting the share page</h1>
     <section class="ss-block">
-    	<h2>Same URL for every service</h2>
+    	<h2>Manually setting the share URL</h2>
+    	<p>simple-share automatically shares the URL of the current page, but if you want to set it yourself (say, to add referer=simpleshare or something like that) you can do it with the <code>data-url</code> attribute. To use the same URL for a set of simple-share links, add the URL you want to use in the <code>data-url</code> attribute of the DIRECT PARENT of the links.</p>
+    	<h3>Markup</h3>
+    	<p class="code"><code>&lt;div class="manual" data-url="http://google.com"&gt;</code></p>
     	<div class="manual" data-url="http://google.com">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
@@ -80,6 +82,8 @@
     </section>
     <section class="ss-block">
     	<h2>Different URLs for different services</h2>
+    	<p>You can also specify different share URLs for each service. In each link, along with the <code>data-service</code> attribute, also include the url you want to share for that particular service. If you don't specify one, it will fall back to use the parent container's <code>data-url</code>, and if that doesn't exist, it will just use the current page.</p>
+    	<p class="code"><code>&lt;a data-service="facebook" data-url="http://yahoo.com"&gt;</code></p>
     	<div class="manual" data-url="http://google.com">
 			<a data-service="facebook" data-url="http://yahoo.com">facebook</a>
 			<a data-service="twitter" data-url="http://bing.com">twitter</a>
