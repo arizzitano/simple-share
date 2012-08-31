@@ -14,12 +14,13 @@
     </style>
     <link rel="stylesheet" href="../sst-style.css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="../jquery.simple-share-tools.js"></script>
+    <script type="text/javascript" src="../jquery.simple-share.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.basic a').simpleShare();
             $('.basic-2 a').simpleShare({'shape': 'circle'});
             $('.basic-3 a').simpleShare({'shape': 'none', 'color': false});
+            $('.pinterest-demo a').simpleShare();
             $('.manual a').simpleShare();
         });
     </script>
@@ -34,6 +35,7 @@
 		<div class="basic">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
+			<a data-service="pinterest">pinterest</a>
 			<a data-service="google-plus">google-plus</a>
 			<a data-service="linkedin">linkedin</a>
 			<a data-service="stumbleupon">stumbleupon</a>
@@ -49,6 +51,7 @@
 		<div class="basic-2">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
+			<a data-service="pinterest">pinterest</a>
 			<a data-service="google-plus">google-plus</a>
 			<a data-service="linkedin">linkedin</a>
 			<a data-service="stumbleupon">stumbleupon</a>
@@ -58,6 +61,7 @@
 		<div class="basic-3">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
+			<a data-service="pinterest">pinterest</a>
 			<a data-service="google-plus">google-plus</a>
 			<a data-service="linkedin">linkedin</a>
 			<a data-service="stumbleupon">stumbleupon</a>
@@ -65,6 +69,24 @@
 			<a data-service="tumblr">tumblr</a>
 		</div>
 	</section>
+	<section class="ss-block">
+		<h2>Pinterest</h2>
+		<img src="sampleimg.jpeg" id="simple-share-pinterest" />
+		<img src="sampleimg2.jpeg" id="custom-pinterest-share" />
+		<p>If you wish to share via Pinterest, you must specify which image on your page to use for the pin via the <code>image</code> option. Pass the selector for your image here. If you don't pass a selector through <code>image</code>, it will default to <code>'#simple-share-pinterest'</code>.</p>
+		<h3>Call</h3>
+		
+		<div class="pinterest-demo">
+			<a data-service="facebook">facebook</a>
+			<a data-service="twitter">twitter</a>
+			<a data-service="pinterest">pinterest</a>
+			<a data-service="google-plus">google-plus</a>
+			<a data-service="linkedin">linkedin</a>
+			<a data-service="stumbleupon">stumbleupon</a>
+			<a data-service="reddit">reddit</a>
+			<a data-service="tumblr">tumblr</a>
+		</div>
+    </section>
     <section class="ss-block">
     	<h2>Manually setting the share URL</h2>
     	<p>simple-share automatically shares the URL of the current page, but if you want to set it yourself (say, to add referer=simpleshare or something like that) you can do it with the <code>data-url</code> attribute. To use the same URL for a set of simple-share links, add the URL you want to use in the <code>data-url</code> attribute of the DIRECT PARENT of the links.</p>
@@ -73,6 +95,7 @@
     	<div class="manual" data-url="http://google.com">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
+			<a data-service="pinterest">pinterest</a>
 			<a data-service="google-plus">google-plus</a>
 			<a data-service="linkedin">linkedin</a>
 			<a data-service="stumbleupon">stumbleupon</a>
@@ -87,6 +110,7 @@
     	<div class="manual" data-url="http://google.com">
 			<a data-service="facebook" data-url="http://yahoo.com">facebook</a>
 			<a data-service="twitter" data-url="http://bing.com">twitter</a>
+			<a data-service="pinterest">pinterest</a>
 			<a data-service="google-plus">google-plus</a>
 			<a data-service="linkedin">linkedin</a>
 			<a data-service="stumbleupon">stumbleupon</a>
