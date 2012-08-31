@@ -9,6 +9,12 @@
                         base: 'http://twitter.com/intent/tweet?', 
                         urlkey: 'url='
                         },
+            'pinterest': {
+                        base: 'http://pinterest.com/pin/create/button/?', 
+                        urlkey: 'url=',
+                        imgkey: 'media=',
+                        titlekey: 'title=' 
+                        },
             'linkedin': {
                         base: 'http://www.linkedin.com/shareArticle?', 
                         urlkey: 'url='
@@ -41,10 +47,12 @@
             'icons': true, 		// use icons vs. don't use icons
             'color': true, 		// style icons with services' official colors
             'shape': 'square',	// "circle", "square", or "none"
-            'url': window.location.href // the url to use for sharing
+            'url': window.location.href, // the url to use for sharing
+            'image': '#simple-share-pinterest'
         }, args),
         $sslinks = $(this),
         parenturl = $(this).parent().data('url') || $(this).parent().parent().data('url'),
+        $image = $(settings.image),
         popup = function(e) {
             var nw = window.open(e.data.url, e.data.title,'height=400,width=600');
             if (window.focus) {
@@ -53,7 +61,7 @@
             return false;
         },
         iconNum = '',
-        service, s, href;
+        service, s, href, src;
         
         // interpret shapes for the appropriate icon classes
         if (settings.shape == 'circle') {
@@ -75,6 +83,9 @@
             if (s !== undefined) {
             	// specific urls on each link trump other urls
                 href = s.base + s.urlkey + escape($(this).data('url') || settings.url);
+                if ($image && s.imgkey) {
+                	href = href + '&' + s.imgkey + $image[0].src;
+                }
                 if (settings.icons) {
                     $(this).addClass('icon-'+service+iconNum);
                     if (settings.color) {
