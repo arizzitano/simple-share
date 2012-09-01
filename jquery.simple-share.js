@@ -30,6 +30,11 @@
                         base: 'http://www.stumbleupon.com/submit?',
                         urlkey: 'url=',
                         titlekey: 'title='
+                        },
+            'email': {
+                        base: 'mailto:?',
+                        urlkey: 'body=',
+                        titlekey: 'subject='
                         }
         },
         settings = $.extend({
@@ -39,7 +44,7 @@
             'url': window.location.href // the url to use for sharing
         }, args),
         $sslinks = $(this),
-        parenturl = $(this).parent().data('url'),
+        parenturl = $(this).parent().data('url') || $(this).parent().parent().data('url'),
         popup = function(e) {
             var nw = window.open(e.data.url, e.data.title,'height=400,width=600');
             if (window.focus) {
