@@ -15,6 +15,7 @@ Currently, simple-share supports sharing via:
 * Stumbleupon
 * Reddit
 * Tumblr
+* Email
 * More to come
 
 How it works
