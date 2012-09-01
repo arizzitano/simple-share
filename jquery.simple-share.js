@@ -87,7 +87,8 @@
                 	href = href + '&' + s.imgkey + $image[0].src;
                 }
                 if (settings.icons) {
-                    $(this).addClass('icon-'+service+iconNum);
+                	// TODO: add a third email icon
+                    $(this).addClass('icon-'+service+(service=='email'&&iconNum=='-3' ? '' : iconNum));
                     if (settings.color) {
                         $(this).addClass('sst-color');
                     }
