@@ -4,7 +4,7 @@
     <style type="text/css">
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {font-family: Helvetica, Arial, sans-serif; }
-        .basic, .basic-2, .basic-3, .manual { font-size: 20px; display: inline-block; width: 250px; }
+        .basic, .basic-2, .basic-3, .manual, .pinterest-demo { font-size: 20px; display: inline-block; width: 250px; }
         .ss-block { margin-bottom: 80px; border: 1px solid #eeedee; padding: 20px; }
         .code { background: #eeedee; border: 1px solid #444; margin: 10px 0; padding: 10px; }
         h1, h2, h3, h4, h5, h6 { margin: 0.5em 0; }
@@ -20,7 +20,7 @@
             $('.basic a').simpleShare();
             $('.basic-2 a').simpleShare({'shape': 'circle'});
             $('.basic-3 a').simpleShare({'shape': 'none', 'color': false});
-            $('.pinterest-demo a').simpleShare();
+            $('.pinterest-demo a').simpleShare({'image': '#custom-pinterest-share'});
             $('.manual a').simpleShare();
         });
     </script>
@@ -76,9 +76,9 @@
 		<h2>Pinterest</h2>
 		<img src="sampleimg.jpeg" id="simple-share-pinterest" />
 		<img src="sampleimg2.jpeg" id="custom-pinterest-share" />
-		<p>If you wish to share via Pinterest, you must specify which image on your page to use for the pin via the <code>image</code> option. Pass the selector for your image here. If you don't pass a selector through <code>image</code>, it will default to <code>'#simple-share-pinterest'</code>.</p>
+		<p>If you wish to share via Pinterest, you must specify which image on your page to use for the pin. Pass the selector for this image via the <code>image</code> option. If you don't pass a selector through <code>image</code>, it will default to <code>'#simple-share-pinterest'</code>.</p>
 		<h3>Call</h3>
-		
+		<p class="code"><code>$('.basic a').simpleShare('image':'#custom-pinterest-share');</code></p>
 		<div class="pinterest-demo">
 			<a data-service="facebook">facebook</a>
 			<a data-service="twitter">twitter</a>
